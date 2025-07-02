@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C'Groovy - Music Streaming Service</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="./jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">C'<span>Groovy</span></a>
+            
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="collection.html" class="nav-link">Songs <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="collection.html#pop">Pop</a>
+                            <a href="collection.html#rnb">R&B</a>
+                            <a href="collection.html#kpop">K-Pop</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Music at Your Fingertips</h1>
+                <p>Stream millions of songs from diverse genres and artists across the world. Discover, listen, and share your favorite music anytime, anywhere.</p>
+                <a href="register.html" class="btn">Join Now</a>
+            </div>
+        </section>
+        
+        <!-- Slider Section -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Recommended For You</h2>
+                
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide">
+                            <img src="images/slide1.jpg" alt="Recommended Song 1">
+                            <div class="slide-content">
+                                <h3>Tek It</h3>
+                                <p>Cafune</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide2.jpg" alt="Recommended Song 2">
+                            <div class="slide-content">
+                                <h3>Empire Of The Sun</h3>
+                                <p>Walking On A Dream </p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="images/slide3.jpg" alt="Recommended Song 3">
+                            <div class="slide-content">
+                                <h3>Motion</h3>
+                                <p>Calvin Harris</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Best Sellers Section -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">Best Sellers</h2>
+                
+                <div class="songs-grid">
+                    <div class="song-card">
+                        <img src="images/song1.jpg" alt="Song 1">
+                        <div class="song-info">
+                            <h3>Uptown Funk</h3>
+                            <p>Mark Ronson ft. Bruno Mars</p>
+                            <p>A funky hit that topped charts worldwide with its catchy rhythm and energetic vibe.</p>
+                            <a href="detail.html?song=uptown-funk" class="btn">Listen Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="song-card">
+                        <img src="images/song2.jpg" alt="Song 2">
+                        <div class="song-info">
+                            <h3>Shape of You</h3>
+                            <p>Ed Sheeran</p>
+                            <p>A pop and dancehall fusion that became one of the best-selling singles of all time.</p>
+                            <a href="detail.html?song=shape-of-you" class="btn">Listen Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="song-card">
+                        <img src="images/song3.jpg" alt="Song 3">
+                        <div class="song-info">
+                            <h3>Bad Guy</h3>
+                            <p>Billie Eilish</p>
+                            <p>A dark pop track with minimalist production that showcases Billie's unique style.</p>
+                            <a href="detail.html?song=bad-guy" class="btn">Listen Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h3>C'Groovy</h3>
+                <p>Your ultimate music streaming service since 2016. Bringing music to everyone's fingertips.</p>
+                <div class="social-links mt-3">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="collection.html">Songs</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> JL. Kebon Jeruk Raya No. 27, Kebon Jeruk, Jakarta Barat. </li>
+                    <li><i class="fas fa-phone"></i> +62 0819-2189-7555</li>
+                    <li><i class="fas fa-envelope"></i> info@cgroovy.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2024 C'Groovy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

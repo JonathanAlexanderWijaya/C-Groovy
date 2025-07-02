@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Details - C'Groovy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">C'<span>Groovy</span></a>
+            
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="collection.html" class="nav-link">Songs <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="collection.html#pop">Pop</a>
+                            <a href="collection.html#rnb">R&B</a>
+                            <a href="collection.html#kpop">K-Pop</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Song Detail Section -->
+        <section>
+            <div class="container">
+                <div class="song-detail">
+                    <div class="song-cover">
+                        <img src="images/song1.jpg" alt="Song Cover" id="song-cover">
+                    </div>
+                    
+                    <div class="song-details">
+                        <h2 id="song-title">Uptown Funk</h2>
+                        <p class="artist" id="song-artist">Mark Ronson ft. Bruno Mars</p>
+                        
+                        <div class="song-description" id="song-description">
+                            <p>A funky hit that topped charts worldwide with its catchy rhythm and energetic vibe. Released in 2014, "Uptown Funk" became one of the best-selling singles of all time, spending 14 consecutive weeks at number one on the Billboard Hot 100.</p>
+                            <p>The song combines elements of funk, soul, boogie, disco-pop, and Minneapolis sound with a 1980s-inspired sound. Its music video, featuring Bruno Mars and his band in colorful suits dancing in city streets, has garnered billions of views online.</p>
+                        </div>
+                        
+                        <div class="audio-player">
+                            <h3>Listen Now</h3>
+                            <audio controls>
+                                <source src="audio/sample.mp3" type="audio/mpeg" id="song-audio">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lyrics">
+                    <h3>Lyrics</h3>
+                    <div id="song-lyrics">
+                        <p>This hit, that ice cold<br>
+                        Michelle Pfeiffer, that white gold<br>
+                        This one for them hood girls<br>
+                        Them good girls straight masterpieces<br>
+                        Stylin', wilin', livin' it up in the city<br>
+                        Got Chucks on with Saint Laurent<br>
+                        Gotta kiss myself, I'm so pretty</p>
+
+                        <p>I'm too hot (hot damn)<br>
+                        Called a police and a fireman<br>
+                        I'm too hot (hot damn)<br>
+                        Make a dragon wanna retire, man<br>
+                        I'm too hot (hot damn)<br>
+                        Say my name, you know who I am<br>
+                        I'm too hot (hot damn)<br>
+                        And my band 'bout that money, break it down</p>
+
+                        <p>Girls hit your hallelujah (whoo)<br>
+                        Girls hit your hallelujah (whoo)<br>
+                        Girls hit your hallelujah (whoo)<br>
+                        'Cause uptown funk gon' give it to you<br>
+                        'Cause uptown funk gon' give it to you<br>
+                        'Cause uptown funk gon' give it to you<br>
+                        Saturday night and we in the spot<br>
+                        Don't believe me just watch (come on)</p>
+                        
+                        <!-- More lyrics would go here -->
+                    </div>
+                </div>
+                
+                <div class="related-songs">
+                    <h3>You Might Also Like</h3>
+                    <div class="songs-grid">
+                        <div class="song-card">
+                            <img src="images/song2.jpg" alt="Related Song 1">
+                            <div class="song-info">
+                                <h3>Shape of You</h3>
+                                <p>Ed Sheeran</p>
+                                <a href="detail.html?song=shape-of-you" class="btn">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="song-card">
+                            <img src="images/song3.jpg" alt="Related Song 2">
+                            <div class="song-info">
+                                <h3>Bad Guy</h3>
+                                <p>Billie Eilish</p>
+                                <a href="detail.html?song=bad-guy" class="btn">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="song-card">
+                            <img src="images/rnb1.jpg" alt="Related Song 3">
+                            <div class="song-info">
+                                <h3>Blinding Lights</h3>
+                                <p>The Weeknd</p>
+                                <a href="detail.html?song=blinding-lights" class="btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h3>C'Groovy</h3>
+                <p>Your ultimate music streaming service since 2016. Bringing music to everyone's fingertips.</p>
+                <div class="social-links mt-3">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="collection.html">Songs</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> JL. Kebon Jeruk Raya No. 27, Kebon Jeruk, Jakarta Barat. </li>
+                    <li><i class="fas fa-phone"></i> +62 0819-2189-7555</li>
+                    <li><i class="fas fa-envelope"></i> info@cgroovy.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2024 C'Groovy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Song detail page script
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get song parameter from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const songParam = urlParams.get('song');
+            
+            // Song data (in a real application, this would come from a database)
+            const songs = {
+                'uptown-funk': {
+                    title: 'Uptown Funk',
+                    artist: 'Mark Ronson ft. Bruno Mars',
+                    cover: 'images/song1.jpg',
+                    description: '<p>A funky hit that topped charts worldwide with its catchy rhythm and energetic vibe. Released in 2014, "Uptown Funk" became one of the best-selling singles of all time, spending 14 consecutive weeks at number one on the Billboard Hot 100.</p><p>The song combines elements of funk, soul, boogie, disco-pop, and Minneapolis sound with a 1980s-inspired sound. Its music video, featuring Bruno Mars and his band in colorful suits dancing in city streets, has garnered billions of views online.</p>',
+                    lyrics: '<p>This hit, that ice cold<br>Michelle Pfeiffer, that white gold<br>This one for them hood girls<br>Them good girls straight masterpieces<br>Stylin\', wilin\', livin\' it up in the city<br>Got Chucks on with Saint Laurent<br>Gotta kiss myself, I\'m so pretty</p><p>I\'m too hot (hot damn)<br>Called a police and a fireman<br>I\'m too hot (hot damn)<br>Make a dragon wanna retire, man<br>I\'m too hot (hot damn)<br>Say my name, you know who I am<br>I\'m too hot (hot damn)<br>And my band \'bout that money, break it down</p><p>Girls hit your hallelujah (whoo)<br>Girls hit your hallelujah (whoo)<br>Girls hit your hallelujah (whoo)<br>\'Cause uptown funk gon\' give it to you<br>\'Cause uptown funk gon\' give it to you<br>\'Cause uptown funk gon\' give it to you<br>Saturday night and we in the spot<br>Don\'t believe me just watch (come on)</p>'
+                },
+                'shape-of-you': {
+                    title: 'Shape of You',
+                    artist: 'Ed Sheeran',
+                    cover: 'images/song2.jpg',
+                    description: '<p>A pop and dancehall fusion that became one of the best-selling singles of all time. Released in 2017 as part of Ed Sheeran\'s album "÷" (Divide), "Shape of You" topped charts in 34 countries and became the most streamed song on Spotify.</p><p>The song features a marimba-fueled percussion and clean guitar with Sheeran\'s signature vocal style. Its music video, showing Sheeran training as a boxer and falling in love, has been viewed billions of times worldwide.</p>',
+                    lyrics: '<p>The club isn\'t the best place to find a lover<br>So the bar is where I go<br>Me and my friends at the table doing shots<br>Drinking fast and then we talk slow<br>Come over and start up a conversation with just me<br>And trust me I\'ll give it a chance now<br>Take my hand, stop, put Van the Man on the jukebox<br>And then we start to dance, and now I\'m singing like</p><p>Girl, you know I want your love<br>Your love was handmade for somebody like me<br>Come on now, follow my lead<br>I may be crazy, don\'t mind me<br>Say, boy, let\'s not talk too much<br>Grab on my waist and put that body on me<br>Come on now, follow my lead<br>Come, come on now, follow my lead</p><p>I\'m in love with the shape of you<br>We push and pull like a magnet do<br>Although my heart is falling too<br>I\'m in love with your body<br>And last night you were in my room<br>And now my bedsheets smell like you<br>Every day discovering something brand new<br>I\'m in love with your body</p>'
+                },
+                'bad-guy': {
+                    title: 'Bad Guy',
+                    artist: 'Billie Eilish',
+                    cover: 'images/song3.jpg',
+                    description: '<p>A dark pop track with minimalist production that showcases Billie\'s unique style. Released in 2019 as part of her debut studio album "When We All Fall Asleep, Where Do We Go?", "Bad Guy" became Billie Eilish\'s first number-one single on the Billboard Hot 100.</p><p>The song features a bass-heavy beat, finger snaps, and synthesized bass lines with Eilish\'s whispered vocals. Its music video, showing Eilish in various surreal and colorful scenarios, has been praised for its distinctive visual aesthetic.</p>',
+                    lyrics: '<p>White shirt now red, my bloody nose<br>Sleeping, you\'re on your tippy toes<br>Creeping around like no one knows<br>Think you\'re so criminal<br>Bruises on both my knees for you<br>Don\'t say thank you or please<br>I do what I want when I\'m wanting to<br>My soul? So cynical</p><p>So you\'re a tough guy<br>Like it really rough guy<br>Just can\'t get enough guy<br>Chest always so puffed guy<br>I\'m that bad type<br>Make your mama sad type<br>Make your girlfriend mad tight<br>Might seduce your dad type<br>I\'m the bad guy<br>Duh</p><p>I\'m the bad guy</p>'
+                }
+                // Add more songs as needed
+            };
+            
+            // Default to uptown-funk if no song parameter or song not found
+            const song = songs[songParam] || songs['uptown-funk'];
+            
+            // Update page content with song data
+            document.getElementById('song-title').textContent = song.title;
+            document.getElementById('song-artist').textContent = song.artist;
+            document.getElementById('song-cover').src = song.cover;
+            document.getElementById('song-description').innerHTML = song.description;
+            document.getElementById('song-lyrics').innerHTML = song.lyrics;
+            
+            // Note: In a real application, you would also update the audio source
+            // document.getElementById('song-audio').src = song.audio;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - C'Groovy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">C'<span>Groovy</span></a>
+            
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="collection.html" class="nav-link">Songs <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="collection.html#pop">Pop</a>
+                            <a href="collection.html#rnb">R&B</a>
+                            <a href="collection.html#kpop">K-Pop</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Join C'Groovy</h1>
+                <p>Register now to access millions of songs and create your personalized music experience.</p>
+            </div>
+        </section>
+        
+        <!-- Registration Form Section -->
+        <section>
+            <div class="container">
+                <div class="form-container">
+                    <h2 class="text-center mb-4">Create Your Account</h2>
+                    
+                    <form id="registration-form" onsubmit="return validateForm()">
+                        <!-- Name Field -->
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your full name">
+                            <div class="error-message"></div>
+                        </div>
+                        
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="text" id="email" class="form-control" placeholder="Enter your email address">
+                            <div class="error-message"></div>
+                        </div>
+                        
+                        <!-- Password Field -->
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" class="form-control" placeholder="Create a password (min. 8 characters with at least one number)">
+                            <div class="error-message"></div>
+                        </div>
+                        
+                        <!-- Age Field -->
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" class="form-control" placeholder="Enter your age">
+                            <div class="error-message"></div>
+                        </div>
+                        
+                        <!-- Gender Field -->
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="male" name="gender" value="male">
+                                    <label for="male">Male</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Female</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="other" name="gender" value="other">
+                                    <label for="other">Other</label>
+                                </div>
+                            </div>
+                            <div class="error-message"></div>
+                        </div>
+                        
+                        <!-- Terms & Conditions -->
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="terms">
+                                <label for="terms">I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></label>
+                            </div>
+                            <div class="error-message"></div>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <div class="form-group">
+                            <button type="submit" class="btn" style="width: 100%;">Register Now</button>
+                        </div>
+                        
+                        <p class="text-center mt-3">Already have an account? <a href="#">Log In</a></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h3>C'Groovy</h3>
+                <p>Your ultimate music streaming service since 2016. Bringing music to everyone's fingertips.</p>
+                <div class="social-links mt-3">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="collection.html">Songs</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> JL. Kebon Jeruk Raya No. 27, Kebon Jeruk, Jakarta Barat.</li>
+                    <li><i class="fas fa-phone"></i> +62 0819-2189-7555</li>
+                    <li><i class="fas fa-envelope"></i> info@cgroovy.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2024 C'Groovy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+# References
+
+## CSS Framework and Libraries
+- Font Awesome 6.4.0: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+- Google Fonts (Montserrat, Open Sans, Poppins): https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600&display=swap
+
+## JavaScript Libraries
+- jQuery 3.6.0: https://code.jquery.com/jquery-3.6.0.min.js
+
+## Design Inspiration
+- Music streaming services UI/UX patterns
+- Modern responsive web design principles
+
+## Images
+- All images used in this website are placeholders for demonstration purposes only.
+- In a production environment, these would be replaced with properly licensed images.
+
+## Audio
+- Sample audio file is a placeholder for demonstration purposes only.
+- In a production environment, this would be replaced with properly licensed audio content.
+
+## Code References
+- W3Schools: https://www.w3schools.com/
+- MDN Web Docs: https://developer.mozilla.org/

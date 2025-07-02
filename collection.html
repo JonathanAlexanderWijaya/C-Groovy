@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Collection - C'Groovy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">C'<span>Groovy</span></a>
+            
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="collection.html" class="nav-link">Songs <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#pop">Pop</a>
+                            <a href="#rnb">R&B</a>
+                            <a href="#kpop">K-Pop</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Song Collection</h1>
+                <p>Explore our vast library of songs from various genres and artists.</p>
+            </div>
+        </section>
+        
+        <!-- Genre Tabs Section -->
+        <section>
+            <div class="container">
+                <div class="genre-tabs">
+                    <button class="genre-tab active" data-target="pop">Pop</button>
+                    <button class="genre-tab" data-target="rnb">R&B</button>
+                    <button class="genre-tab" data-target="kpop">K-Pop</button>
+                </div>
+                
+                <!-- Pop Genre -->
+                <div id="pop" class="genre-content active">
+                    <h2 class="section-title">Pop Songs</h2>
+                    
+                    <div class="songs-grid">
+                        <div class="song-card">
+                            <img src="images/pop1.jpg" alt="Pop Song 1">
+                            <div class="song-info">
+                                <h3>Shape of You</h3>
+                                <p>Ed Sheeran</p>
+                                <p>A pop and dancehall fusion that became one of the best-selling singles of all time.</p>
+                                <a href="detail.html?song=shape-of-you" class="btn">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="song-card">
+                            <img src="images/pop2.jpg" alt="Pop Song 2">
+                            <div class="song-info">
+                                <h3>Bad Guy</h3>
+                                <p>Billie Eilish</p>
+                                <p>A dark pop track with minimalist production that showcases Billie's unique style.</p>
+                                <a href="detail.html?song=bad-guy" class="btn">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="song-card">
+                            <img src="images/pop3.jpg" alt="Pop Song 3">
+                            <div class="song-info">
+                                <h3>Levitating</h3>
+                                <p>Dua Lipa</p>
+                                <p>An upbeat disco-pop song that captures the feeling of falling in love.</p>
+                                <a href="detail.html?song=levitating" class="btn">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="song-card">
+                            <img src="images/pop4.jpg" alt="Pop Song 4">
+                            <div class="song-info">
+                                <h3>As It Was</h3>
+                                <p>Harry Styles</p>
+                                <p>A synth-pop track with nostalgic vibes that topped charts worldwide.</p>
+                                <a href="detail.html?song=as-it-was" class="btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- R&B Genre -->
+                <div id="rnb" class="genre-content">
+                    <h2 class="section-title">R&B Songs</h2>
+                    
+                    <div class="songs-grid">
+                        <div class="song-card">
+                            <img src="images/rnb1.jpg" alt="R&B Song 1">
+                            <div class="song-info">
+                                <h3>Blinding Lights</h3>
+                                <p>The Weeknd</p>
+                                <p>A synth-heavy R&B track with 80s influences that broke chart records.</p>
+                                <a href="detail.html?song=blinding-lights" class="btn">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="song-card">
+                            <img src="images/rnb2.jpg" alt="R&B Song 2">
+                            <div class="song-info">
+                                <h3>Redbone</h3>
+                                <p>Childish Gambino</p>
+                                <p>A psychedelic soul and funk-influenced R&B track with a distinctive falsetto vocal.</p>
+                                <a href="detail.html?song=redbone" class="btn">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="song-card">
+                            <img src="images/rnb3.jpg" alt="R&B Song 3">
+                            <div class="song-info">
+                                <h3>Love On The Brain</h3>
+                                <p>Rihanna</p>
+                                <p>A soulful R&B ballad with doo-wop influences showcasing Rihanna's vocal range.</p>
+                                <a href="detail.html?song=love-on-the-brain" class="btn">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="song-card">
+                            <img src="images/rnb4.jpg" alt="R&B Song 4">
+                            <div class="song-info">
+                                <h3>Adore You</h3>
+                                <p>H.E.R.</p>
+                                <p>A smooth R&B track with delicate guitar work and soulful vocals.</p>
+                                <a href="detail.html?song=adore-you" class="btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- K-Pop Genre -->
+                <div id="kpop" class="genre-content">
+                    <h2 class="section-title">K-Pop Songs</h2>
+                    
+                    <div class="songs-grid">
+                        <div class="song-card">
+                            <img src="images/kpop1.jpg" alt="K-Pop Song 1">
+                            <div class="song-info">
+                                <h3>Dynamite</h3>
+                                <p>BTS</p>
+                                <p>An upbeat disco-pop song that became BTS's first #1 hit on the Billboard Hot 100.</p>
+                                <a href="detail.html?song=dynamite" class="btn">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="song-card">
+                            <img src="images/kpop2.jpg" alt="K-Pop Song 2">
+                            <div class="song-info">
+                                <h3>How You Like That</h3>
+                                <p>BLACKPINK</p>
+                                <p>A hip-hop and EDM track with powerful vocals and a catchy chorus.</p>
+                                <a href="detail.html?song=how-you-like-that" class="btn">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="song-card">
+                            <img src="images/kpop3.jpg" alt="K-Pop Song 3">
+                            <div class="song-info">
+                                <h3>Fancy</h3>
+                                <p>TWICE</p>
+                                <p>A vibrant electropop song with a colorful music video and choreography.</p>
+                                <a href="detail.html?song=fancy" class="btn">View Details</a>
+                            </div>
+                        </div>
+                        
+                        <div class="song-card">
+                            <img src="images/kpop4.jpg" alt="K-Pop Song 4">
+                            <div class="song-info">
+                                <h3>Love Shot</h3>
+                                <p>EXO</p>
+                                <p>A smooth R&B-influenced K-pop track with a memorable choreography.</p>
+                                <a href="detail.html?song=love-shot" class="btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-section">
+                <h3>C'Groovy</h3>
+                <p>Your ultimate music streaming service since 2016. Bringing music to everyone's fingertips.</p>
+                <div class="social-links mt-3">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="collection.html">Songs</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> JL. Kebon Jeruk Raya No. 27, Kebon Jeruk, Jakarta Barat. </li>
+                    <li><i class="fas fa-phone"></i> +62 0819-2189-7555</li>
+                    <li><i class="fas fa-envelope"></i> info@cgroovy.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2024 C'Groovy. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
